@@ -27,6 +27,7 @@ struct ContentView: View {
                                 PeopleCell(name: people.name, userName: people.username, imageUrl:people.img)
                             }
                         }
+                        
                     }
                 }
             }

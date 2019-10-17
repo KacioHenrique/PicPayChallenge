@@ -32,7 +32,11 @@ struct SearchBar: UIViewRepresentable {
 
     func makeUIView(context: UIViewRepresentableContext<SearchBar>) -> UISearchBar {
         let searchBar = UISearchBar(frame: .zero)
+        searchBar.placeholder = "A quem você deseja pagar?"
         searchBar.delegate = context.coordinator
+        searchBar.layer.cornerRadius = 50
+        searchBar.frame =  CGRect(x: 0, y: 0, width: 5000, height: 40)
+        searchBar.backgroundColor = .white
         return searchBar
     }
 
