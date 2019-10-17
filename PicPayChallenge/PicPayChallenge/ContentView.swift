@@ -7,10 +7,20 @@
 //
 
 import SwiftUI
-
+import Combine
 struct ContentView: View {
+    @ObservedObject var networkManeger = NetworkManager.init()
     var body: some View {
-        Text("Hello Whjhjbghugguorld")
+        VStack{
+            if self.networkManeger.peoples.isEmpty{
+                Text("load ...")
+            }
+            else{
+                List(self.networkManeger.peoples){ people in
+                    PeopleCell(name: people.name, userName: people.username, imageUrl:people.img)
+                }
+            }
+        }
     }
 }
 
