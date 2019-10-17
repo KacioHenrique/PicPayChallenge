@@ -14,6 +14,7 @@
 		E69374462358A7E20018C0A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E69374452358A7E20018C0A3 /* Assets.xcassets */; };
 		E69374492358A7E20018C0A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E69374482358A7E20018C0A3 /* Preview Assets.xcassets */; };
 		E693744C2358A7E20018C0A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E693744A2358A7E20018C0A3 /* LaunchScreen.storyboard */; };
+		E69374542358A9D90018C0A3 /* peopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69374532358A9D90018C0A3 /* peopleCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E69374482358A7E20018C0A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E693744B2358A7E20018C0A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E693744D2358A7E20018C0A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E69374532358A9D90018C0A3 /* peopleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = peopleCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				E693744D2358A7E20018C0A3 /* Info.plist */,
 				E69374402358A7DE0018C0A3 /* PicPayChallenge.xcdatamodeld */,
 				E69374472358A7E20018C0A3 /* Preview Content */,
+				E69374532358A9D90018C0A3 /* peopleCell.swift */,
 			);
 			path = PicPayChallenge;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			files = (
 				E693743D2358A7DE0018C0A3 /* AppDelegate.swift in Sources */,
 				E69374422358A7DE0018C0A3 /* PicPayChallenge.xcdatamodeld in Sources */,
+				E69374542358A9D90018C0A3 /* peopleCell.swift in Sources */,
 				E69374442358A7DE0018C0A3 /* ContentView.swift in Sources */,
 				E693743F2358A7DE0018C0A3 /* SceneDelegate.swift in Sources */,
 			);
