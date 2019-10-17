@@ -10,16 +10,27 @@ import SwiftUI
 import Combine
 struct ContentView: View {
     @ObservedObject var networkManeger = NetworkManager.init()
+    @State private var searchQuery: String = ""
     var body: some View {
-        VStack{
-            if self.networkManeger.peoples.isEmpty{
-                Text("load ...")
-            }
-            else{
-                List(self.networkManeger.peoples){ people in
-                    PeopleCell(name: people.name, userName: people.username, imageUrl:people.img)
+        NavigationView{
+            VStack{
+                if self.networkManeger.peoples.isEmpty{
+                    Text("load ...")
+                }
+                else{
+                    List{
+                        Section(header: SearchBar(text: self.$searchQuery)){
+                            ForEach(self.networkManeger.peoples.filter({
+                                self.searchQuery.isEmpty ? true : "\($0)".contains(self.searchQuery)
+                            })){ people
+                                in
+                                PeopleCell(name: people.name, userName: people.username, imageUrl:people.img)
+                            }
+                        }
+                    }
                 }
             }
+            .navigationBarTitle("Contatos")
         }
     }
 }
