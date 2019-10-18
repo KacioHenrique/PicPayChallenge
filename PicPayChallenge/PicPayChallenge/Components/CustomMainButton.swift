@@ -28,9 +28,9 @@ struct MainButtonStyle: ButtonStyle {
     configuration.label
         .frame(width: CGFloat(296), height: CGFloat(48), alignment: .center)
         .foregroundColor(.white)
-        .background(configuration.isPressed ? Color(#colorLiteral(red: 0.5602599382, green: 0.5717912912, blue: 0.6174288392, alpha: 1)) : Color(#colorLiteral(red: 0.06408599764, green: 0.7783879638, blue: 0.4347344339, alpha: 1)))
+        .background(configuration.isPressed ? Color(#colorLiteral(red: 0.05252525253, green: 0.65, blue: 0.3643939394, alpha: 1)) : Color(#colorLiteral(red: 0.06274509804, green: 0.7764705882, blue: 0.4352941176, alpha: 1)))
         .cornerRadius(100.0)
-        .scaleEffect(configuration.isPressed ? 1.4 : 1)
+        .scaleEffect(configuration.isPressed ? 0.98 : 1)
         .animation(Animation.spring().speed(2))
         .font(.custom("SF UI Text;", size: 18))
     }

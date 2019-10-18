@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E610143E2359D1440093742C /* PrimingRegistrationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E610143D2359D1440093742C /* PrimingRegistrationScreen.swift */; };
+		E61014402359E8AA0093742C /* RegistrationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E610143F2359E8AA0093742C /* RegistrationScreen.swift */; };
 		E693743D2358A7DE0018C0A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E693743C2358A7DE0018C0A3 /* AppDelegate.swift */; };
 		E693743F2358A7DE0018C0A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E693743E2358A7DE0018C0A3 /* SceneDelegate.swift */; };
 		E69374422358A7DE0018C0A3 /* PicPayChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E69374402358A7DE0018C0A3 /* PicPayChallenge.xcdatamodeld */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		E610143D2359D1440093742C /* PrimingRegistrationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimingRegistrationScreen.swift; sourceTree = "<group>"; };
+		E610143F2359E8AA0093742C /* RegistrationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationScreen.swift; sourceTree = "<group>"; };
 		E69374392358A7DE0018C0A3 /* PicPayChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicPayChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E693743C2358A7DE0018C0A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E693743E2358A7DE0018C0A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			children = (
 				E69374432358A7DE0018C0A3 /* ContentView.swift */,
 				E610143D2359D1440093742C /* PrimingRegistrationScreen.swift */,
+				E610143F2359E8AA0093742C /* RegistrationScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				E6BFEC412358D7EE00AA31CF /* PeopleModel.swift in Sources */,
 				E6BFEC4F23590B6E00AA31CF /* SearchBar.swift in Sources */,
 				E6BFEC472358FA8100AA31CF /* ImageLoader.swift in Sources */,
+				E61014402359E8AA0093742C /* RegistrationScreen.swift in Sources */,
 				E6BFEC5523592B4500AA31CF /* CustomMainButton.swift in Sources */,
 				E693743F2358A7DE0018C0A3 /* SceneDelegate.swift in Sources */,
 			);

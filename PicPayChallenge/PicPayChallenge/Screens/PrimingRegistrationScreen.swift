@@ -18,9 +18,12 @@ struct PrimingRegistrationScreen: View {
             Text("Para fazer pagamentos para outras pessoas você precisa cadastrar um cartão de crédito pessoal.")
                 .multilineTextAlignment(.center)
             Spacer()
-            Button(action: {}) {
-                       Text("Cadastrar cartão")
-                   }
+            HStack {
+                NavigationLink(destination: PrimingRegistrationScreen()) {
+                    EmptyView()
+                }
+            }
+            
             .buttonStyle(MainButtonStyle())
         }.frame(width:CGFloat(320), alignment: .center)
        
@@ -28,7 +31,7 @@ struct PrimingRegistrationScreen: View {
     }
 }
 
-struct RegistrationScreen_Previews: PreviewProvider {
+struct PrimingRegistrationScreen_Previews: PreviewProvider {
     static var previews: some View {
         PrimingRegistrationScreen()
     }
