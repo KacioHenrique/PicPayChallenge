@@ -15,6 +15,7 @@ struct ContentView: View {
         NavigationView{
             VStack{
                 if self.networkManeger.peoples.isEmpty{
+                    
                     Text("load ...")
                 }
                 else{
@@ -24,7 +25,12 @@ struct ContentView: View {
                                 self.searchQuery.isEmpty ? true : "\($0)".contains(self.searchQuery)
                             })){ people
                                 in
-                                PeopleCell(name: people.name, userName: people.username, imageUrl:people.img)
+                                HStack {
+                                      PeopleCell(name: people.name, userName: people.username, imageUrl:people.img)
+                                    NavigationLink(destination: PrimingRegistrationScreen()) {
+                                        EmptyView()
+                                    }
+                                }
                             }
                         }
                         
