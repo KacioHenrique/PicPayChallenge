@@ -14,6 +14,7 @@ struct PaymentScreen: View {
     init(data people:PeopleModel){
         self.people = people
     }
+    @State var presentation = false
     var body: some View {
         NavigationView{
             VStack{
@@ -30,6 +31,7 @@ struct PaymentScreen: View {
                 }
                 Spacer()
                 Button(action: {
+                    self.presentation = true
                 }) {
                     Text("Pagar")
                     
@@ -39,6 +41,9 @@ struct PaymentScreen: View {
                     .cornerRadius(100.0)
                     .animation(Animation.spring().speed(2))
                     .font(.custom("SF UI Text;", size: 18))
+                    .sheet(isPresented: $presentation) {
+                        PaymentReceiptScreen(people: self.people, paymentamount: self.mecaninc.value)
+                    }
                 Spacer()
             }
         }
