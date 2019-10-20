@@ -27,12 +27,13 @@ struct MainButtonStyle: ButtonStyle {
   func makeBody(configuration: Self.Configuration) -> some View {
     configuration.label
         .frame(width: CGFloat(296), height: CGFloat(48), alignment: .center)
-        .foregroundColor(.white)
         .background(configuration.isPressed ? Color(#colorLiteral(red: 0.05252525253, green: 0.65, blue: 0.3643939394, alpha: 1)) : Color(#colorLiteral(red: 0.06274509804, green: 0.7764705882, blue: 0.4352941176, alpha: 1)))
+        .foregroundColor(.white)
         .cornerRadius(100.0)
         .scaleEffect(configuration.isPressed ? 0.98 : 1)
         .animation(Animation.spring().speed(2))
         .font(.custom("SF UI Text;", size: 18))
+        
     }
 
 }

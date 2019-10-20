@@ -9,25 +9,25 @@
 import SwiftUI
 
 struct PrimingRegistrationScreen: View {
+    @State private var show_modal = false
     var body: some View {
-        VStack{
-            Spacer()
-            Image("ilustration_creditcard")
-            Text("Cadastre um cartão ").frame(width: CGFloat(280), height: CGFloat(64), alignment: .center).font(.custom("SF UI Text;", size: 28)).padding(.bottom, CGFloat(-30))
-            Text("de crédito").frame(width: CGFloat(280), height: CGFloat(64), alignment: .center).font(.custom("SF UI Text;", size: 28))
-            Text("Para fazer pagamentos para outras pessoas você precisa cadastrar um cartão de crédito pessoal.")
-                .multilineTextAlignment(.center)
-            Spacer()
-            HStack {
-                NavigationLink(destination: PrimingRegistrationScreen()) {
-                    EmptyView()
+        NavigationView{
+            VStack{
+                Spacer()
+                Image("ilustration_creditcard")
+                Text("Cadastre um cartão ").frame(width: CGFloat(280), height: CGFloat(64), alignment: .center).font(.custom("SF UI Text;", size: 28)).padding(.bottom, CGFloat(-30))
+                Text("de crédito").frame(width: CGFloat(280), height: CGFloat(64), alignment: .center).font(.custom("SF UI Text;", size: 28))
+                Text("Para fazer pagamentos para outras pessoas você precisa cadastrar um cartão de crédito pessoal.")
+                    .multilineTextAlignment(.center)
+                Spacer()
+                NavigationLink.init(destination: RegistrationScreen()) {
+                    Text("here")
                 }
-            }
-            
-            .buttonStyle(MainButtonStyle())
-        }.frame(width:CGFloat(320), alignment: .center)
-       
-        
+            }.frame(width:CGFloat(320), alignment: .center)
+           .navigationBarHidden(true)
+           .navigationBarTitle(Text("Home"))
+           .edgesIgnoringSafeArea([.top, .bottom])
+        }
     }
 }
 

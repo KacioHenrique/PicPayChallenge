@@ -14,10 +14,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             VStack{
-                if self.networkManeger.peoples.isEmpty{
-                    
-                    Text("load ...")
-                }
+                if self.networkManeger.peoples.isEmpty{Text("load ...")}
                 else{
                     List{
                         Section(header: SearchBar(text: self.$searchQuery)){
@@ -27,13 +24,12 @@ struct ContentView: View {
                                 in
                                 HStack {
                                       PeopleCell(name: people.name, userName: people.username, imageUrl:people.img)
-                                    NavigationLink(destination: PrimingRegistrationScreen()) {
+                                    NavigationLink(destination: PaymentScreen(data: people)) {
                                         EmptyView()
                                     }
                                 }
                             }
                         }
-                        
                     }
                 }
             }

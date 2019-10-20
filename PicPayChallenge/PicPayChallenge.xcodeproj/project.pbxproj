@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E610143E2359D1440093742C /* PrimingRegistrationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E610143D2359D1440093742C /* PrimingRegistrationScreen.swift */; };
 		E61014402359E8AA0093742C /* RegistrationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E610143F2359E8AA0093742C /* RegistrationScreen.swift */; };
+		E652CC2F235C72060084E07D /* MechanicalPaymentview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E652CC2E235C72060084E07D /* MechanicalPaymentview.swift */; };
+		E652CC31235C9FBC0084E07D /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = E652CC30235C9FBC0084E07D /* Test.swift */; };
 		E693743D2358A7DE0018C0A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E693743C2358A7DE0018C0A3 /* AppDelegate.swift */; };
 		E693743F2358A7DE0018C0A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E693743E2358A7DE0018C0A3 /* SceneDelegate.swift */; };
 		E69374422358A7DE0018C0A3 /* PicPayChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E69374402358A7DE0018C0A3 /* PicPayChallenge.xcdatamodeld */; };
@@ -23,11 +25,16 @@
 		E6BFEC4B235902F600AA31CF /* PeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BFEC4A235902F600AA31CF /* PeopleCell.swift */; };
 		E6BFEC4F23590B6E00AA31CF /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BFEC4E23590B6E00AA31CF /* SearchBar.swift */; };
 		E6BFEC5523592B4500AA31CF /* CustomMainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BFEC5423592B4500AA31CF /* CustomMainButton.swift */; };
+		E6D7008D235B389A00CFDF0F /* PaymentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D7008C235B389A00CFDF0F /* PaymentScreen.swift */; };
+		E6D7008F235B38E400CFDF0F /* PeopleCellPaymentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D7008E235B38E400CFDF0F /* PeopleCellPaymentScreen.swift */; };
+		E6D70091235B4DF100CFDF0F /* PaymentTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D70090235B4DF100CFDF0F /* PaymentTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E610143D2359D1440093742C /* PrimingRegistrationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimingRegistrationScreen.swift; sourceTree = "<group>"; };
 		E610143F2359E8AA0093742C /* RegistrationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationScreen.swift; sourceTree = "<group>"; };
+		E652CC2E235C72060084E07D /* MechanicalPaymentview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechanicalPaymentview.swift; sourceTree = "<group>"; };
+		E652CC30235C9FBC0084E07D /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		E69374392358A7DE0018C0A3 /* PicPayChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicPayChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E693743C2358A7DE0018C0A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E693743E2358A7DE0018C0A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +51,9 @@
 		E6BFEC4A235902F600AA31CF /* PeopleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCell.swift; sourceTree = "<group>"; };
 		E6BFEC4E23590B6E00AA31CF /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		E6BFEC5423592B4500AA31CF /* CustomMainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMainButton.swift; sourceTree = "<group>"; };
+		E6D7008C235B389A00CFDF0F /* PaymentScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentScreen.swift; sourceTree = "<group>"; };
+		E6D7008E235B38E400CFDF0F /* PeopleCellPaymentScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCellPaymentScreen.swift; sourceTree = "<group>"; };
+		E6D70090235B4DF100CFDF0F /* PaymentTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +115,7 @@
 				E6BFEC402358D7EE00AA31CF /* PeopleModel.swift */,
 				E6BFEC422358D8EC00AA31CF /* NetworkManager.swift */,
 				E6BFEC462358FA8100AA31CF /* ImageLoader.swift */,
+				E652CC2E235C72060084E07D /* MechanicalPaymentview.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -116,6 +127,8 @@
 				E6BFEC4E23590B6E00AA31CF /* SearchBar.swift */,
 				E6BFEC482358FE6200AA31CF /* ImagePeopleCell.swift */,
 				E6BFEC5423592B4500AA31CF /* CustomMainButton.swift */,
+				E6D7008E235B38E400CFDF0F /* PeopleCellPaymentScreen.swift */,
+				E6D70090235B4DF100CFDF0F /* PaymentTextField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -126,6 +139,8 @@
 				E69374432358A7DE0018C0A3 /* ContentView.swift */,
 				E610143D2359D1440093742C /* PrimingRegistrationScreen.swift */,
 				E610143F2359E8AA0093742C /* RegistrationScreen.swift */,
+				E6D7008C235B389A00CFDF0F /* PaymentScreen.swift */,
+				E652CC30235C9FBC0084E07D /* Test.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -202,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6BFEC492358FE6200AA31CF /* ImagePeopleCell.swift in Sources */,
+				E652CC2F235C72060084E07D /* MechanicalPaymentview.swift in Sources */,
 				E693743D2358A7DE0018C0A3 /* AppDelegate.swift in Sources */,
 				E69374422358A7DE0018C0A3 /* PicPayChallenge.xcdatamodeld in Sources */,
 				E6BFEC432358D8EC00AA31CF /* NetworkManager.swift in Sources */,
@@ -209,6 +225,10 @@
 				E6BFEC4B235902F600AA31CF /* PeopleCell.swift in Sources */,
 				E610143E2359D1440093742C /* PrimingRegistrationScreen.swift in Sources */,
 				E6BFEC412358D7EE00AA31CF /* PeopleModel.swift in Sources */,
+				E6D70091235B4DF100CFDF0F /* PaymentTextField.swift in Sources */,
+				E6D7008F235B38E400CFDF0F /* PeopleCellPaymentScreen.swift in Sources */,
+				E652CC31235C9FBC0084E07D /* Test.swift in Sources */,
+				E6D7008D235B389A00CFDF0F /* PaymentScreen.swift in Sources */,
 				E6BFEC4F23590B6E00AA31CF /* SearchBar.swift in Sources */,
 				E6BFEC472358FA8100AA31CF /* ImageLoader.swift in Sources */,
 				E61014402359E8AA0093742C /* RegistrationScreen.swift in Sources */,
