@@ -14,7 +14,13 @@ struct ImagePeopleCell: View {
         imageLoader = ImageLoader(imageUrl: imageUrl)
     }
     var body: some View {
+<<<<<<< Updated upstream:PicPayChallenge/PicPayChallenge/Components/ImagePeopleCell.swift
         Image(uiImage: (self.imageLoader.data.isEmpty ? UIImage(named:"logo")! : UIImage(data:self.imageLoader.data)!)).resizable().frame(width: 52, height: 52, alignment: .center).clipShape(Circle())
+=======
+        NavigationView {
+            Text("asdasd")
+        }
+>>>>>>> Stashed changes:PicPayChallenge/PicPayChallenge/ContentView.swift
     }
 }
 
