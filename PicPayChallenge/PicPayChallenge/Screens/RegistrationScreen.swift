@@ -9,39 +9,32 @@
 import SwiftUI
 
 struct RegistrationScreen: View {
-    @State private var numCard:String = ""
-    @State private var name:String = ""
-    @State private var expiry:String = ""
-    @State private var cvv = ""
-    @State private var action: Int? = 0
+    @ObservedObject var card:CardPay = CardPay()
+    @ObservedObject private var kGuardian = KeyboardGuardian(textFieldCount: 3)
     var body: some View {
-        VStack{
-            Spacer()
-            Test(value: $numCard, TypeKeyBoard: .decimalPad, placeHoad: "Número do Cartão")
-            Spacer()
-            Test(value: $name, TypeKeyBoard: .namePhonePad, placeHoad: "Nome do titular")
-            Spacer()
-            HStack{
-                Test(value: $name, TypeKeyBoard: .decimalPad, placeHoad: "Vencimento")
-                Test(value: $name, TypeKeyBoard: .decimalPad, placeHoad: "CVV")
-            }
-            Spacer()
-            VStack {
-                NavigationLink(destination:ContentView() , tag: 1, selection: $action) {
-                    EmptyView()
+        NavigationView{
+            VStack{
+                Spacer()
+                Test(value: $card.numberCard, showField: $kGuardian.showField, TypeKeyBoard: .namePhonePad, placeHoad: "Número do Cartão", row: 0).background(GeometryGetter(rect: $kGuardian.rects[0]))
+                    //.offset(y: (-kGuardian.slide * 1)/2).animation(.easeInOut(duration: 1.0))
+                Spacer()
+                Test(value: $card.cardholderName, showField: $kGuardian.showField, TypeKeyBoard: .namePhonePad, placeHoad: "Nome do titular", row: 1).background(GeometryGetter(rect: $kGuardian.rects[1]))
+                Spacer()
+                HStack{
+                    Test(value: $card.expiry, showField: $kGuardian.showField, TypeKeyBoard: .numbersAndPunctuation, placeHoad: "Vencimento", row: 2).background(GeometryGetter(rect: $kGuardian.rects[2]))
+                   Test(value: $card.cvv, showField: $kGuardian.showField, TypeKeyBoard: .numbersAndPunctuation, placeHoad: "CVV", row: 2).background(GeometryGetter(rect: $kGuardian.rects[2]))
                 }
-                
-                
-                Button(action: {
-                    self.action = 1
-                }) {
-                    Text("Salvar")
-                    
-                }.buttonStyle(MainButtonStyle())
+                if(card.isValid){
+                    Button(action: {
+                               }) {
+                                   Text("Cadastrar cartão")
+                               }.buttonStyle(MainButtonStyle())
+                }
                
             }
-             Spacer()
+            .navigationBarTitle(Text("Cadastrar cartão"))
         }
+        .offset(y: kGuardian.slide * 0.8).animation(.easeInOut(duration: 1.0)).onAppear { self.kGuardian.addObserver() }.onDisappear { self.kGuardian.removeObserver() }
     }
 }
 
