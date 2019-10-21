@@ -42,8 +42,9 @@ struct PaymentScreen: View {
                     .animation(Animation.spring().speed(2))
                     .font(.custom("SF UI Text;", size: 18))
                     .sheet(isPresented: $presentation) {
-                        PaymentReceiptScreen(people: self.people, paymentamount: self.mecaninc.value)
-                    }
+                        //PaymentReceiptScreen(people: self.people, paymentamount: self.mecaninc.value)
+                        RegistrationScreen()
+                }
                 Spacer()
             }
         }

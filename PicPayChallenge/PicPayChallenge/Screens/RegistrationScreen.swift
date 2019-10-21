@@ -43,6 +43,8 @@ struct RegistrationScreen: View {
                 }
             }
             .navigationBarTitle(Text("Cadastrar cartão"))
+            .navigationBarHidden(true)
+            .edgesIgnoringSafeArea([.top, .bottom])
         }
     }
 }
