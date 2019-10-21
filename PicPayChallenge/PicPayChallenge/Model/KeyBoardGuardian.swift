@@ -68,9 +68,9 @@ final class KeyboardGuardian: ObservableObject {
             let diff = keyboardRect.minY - tfRect.maxY
             
             if diff > 0 {
-                slide += diff
+                slide +=  0.8 * diff
             } else {
-                slide += min(diff, 0)
+                slide += 2 * min(diff, 0)
             }
             
         }

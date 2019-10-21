@@ -34,7 +34,7 @@ struct RegistrationScreen: View {
             }
             .navigationBarTitle(Text("Cadastrar cartão"))
         }
-        .offset(y: kGuardian.slide * 0.8).animation(.easeInOut(duration: 1.0)).onAppear { self.kGuardian.addObserver() }.onDisappear { self.kGuardian.removeObserver() }
+        .offset(y: kGuardian.slide * 0.8).animation(.easeInOut(duration: 0.2)).onAppear { self.kGuardian.addObserver() }.onDisappear { self.kGuardian.removeObserver() }
     }
 }
 
