@@ -15,36 +15,32 @@ struct RegistrationScreen: View {
     @State private var cvv = ""
     @State private var action: Int? = 0
     var body: some View {
-        NavigationView{
-            VStack{
-                Spacer()
-                TextField("Número do cartão", text: $numCard)
-                    .keyboardType(.numberPad)
-                Spacer()
-                TextField("Nome do titular", text: $name)
-                Spacer()
-                HStack{
-                    TextField("Vencimento", text: $expiry).keyboardType(.numberPad)
-                    TextField("CVV", text: $cvv).keyboardType(.numberPad)
-                }
-                Spacer()
-                VStack {
-                    NavigationLink(destination:ContentView() , tag: 1, selection: $action) {
-                        EmptyView()
-                    }
-                    
-                    
-                    Button(action: {
-                        self.action = 1
-                    }) {
-                        Text("Salvar")
-                        
-                    }.buttonStyle(MainButtonStyle())
-                }
+        VStack{
+            Spacer()
+            Test(value: $numCard, TypeKeyBoard: .decimalPad, placeHoad: "Número do Cartão")
+            Spacer()
+            Test(value: $name, TypeKeyBoard: .namePhonePad, placeHoad: "Nome do titular")
+            Spacer()
+            HStack{
+                Test(value: $name, TypeKeyBoard: .decimalPad, placeHoad: "Vencimento")
+                Test(value: $name, TypeKeyBoard: .decimalPad, placeHoad: "CVV")
             }
-            .navigationBarTitle(Text("Cadastrar cartão"))
-            .navigationBarHidden(true)
-            .edgesIgnoringSafeArea([.top, .bottom])
+            Spacer()
+            VStack {
+                NavigationLink(destination:ContentView() , tag: 1, selection: $action) {
+                    EmptyView()
+                }
+                
+                
+                Button(action: {
+                    self.action = 1
+                }) {
+                    Text("Salvar")
+                    
+                }.buttonStyle(MainButtonStyle())
+               
+            }
+             Spacer()
         }
     }
 }

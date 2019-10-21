@@ -31,7 +31,7 @@ struct PaymentScreen: View {
                 }
                 Spacer()
                 Button(action: {
-                    self.presentation = true
+                    self.presentation = self.mecaninc.isValido
                 }) {
                     Text("Pagar")
                     
@@ -42,8 +42,7 @@ struct PaymentScreen: View {
                     .animation(Animation.spring().speed(2))
                     .font(.custom("SF UI Text;", size: 18))
                     .sheet(isPresented: $presentation) {
-                        //PaymentReceiptScreen(people: self.people, paymentamount: self.mecaninc.value)
-                        RegistrationScreen()
+                        PaymentReceiptScreen(people: self.people, paymentamount: self.mecaninc.value)
                 }
                 Spacer()
             }

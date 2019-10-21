@@ -12,6 +12,7 @@
 		E652CC2F235C72060084E07D /* MechanicalPaymentview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E652CC2E235C72060084E07D /* MechanicalPaymentview.swift */; };
 		E652CC31235C9FBC0084E07D /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = E652CC30235C9FBC0084E07D /* Test.swift */; };
 		E652CC33235CDE350084E07D /* PaymentReceiptScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E652CC32235CDE350084E07D /* PaymentReceiptScreen.swift */; };
+		E6776AB4235DE1E700F97A7B /* GeometryGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6776AB3235DE1E700F97A7B /* GeometryGetter.swift */; };
 		E693743D2358A7DE0018C0A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E693743C2358A7DE0018C0A3 /* AppDelegate.swift */; };
 		E693743F2358A7DE0018C0A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E693743E2358A7DE0018C0A3 /* SceneDelegate.swift */; };
 		E69374422358A7DE0018C0A3 /* PicPayChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E69374402358A7DE0018C0A3 /* PicPayChallenge.xcdatamodeld */; };
@@ -37,6 +38,7 @@
 		E652CC2E235C72060084E07D /* MechanicalPaymentview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechanicalPaymentview.swift; sourceTree = "<group>"; };
 		E652CC30235C9FBC0084E07D /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		E652CC32235CDE350084E07D /* PaymentReceiptScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentReceiptScreen.swift; sourceTree = "<group>"; };
+		E6776AB3235DE1E700F97A7B /* GeometryGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryGetter.swift; sourceTree = "<group>"; };
 		E69374392358A7DE0018C0A3 /* PicPayChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicPayChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E693743C2358A7DE0018C0A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E693743E2358A7DE0018C0A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				E6BFEC5423592B4500AA31CF /* CustomMainButton.swift */,
 				E6D7008E235B38E400CFDF0F /* PeopleCellPaymentScreen.swift */,
 				E6D70090235B4DF100CFDF0F /* PaymentTextField.swift */,
+				E6776AB3235DE1E700F97A7B /* GeometryGetter.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				E6D7008F235B38E400CFDF0F /* PeopleCellPaymentScreen.swift in Sources */,
 				E652CC31235C9FBC0084E07D /* Test.swift in Sources */,
 				E6D7008D235B389A00CFDF0F /* PaymentScreen.swift in Sources */,
+				E6776AB4235DE1E700F97A7B /* GeometryGetter.swift in Sources */,
 				E6BFEC4F23590B6E00AA31CF /* SearchBar.swift in Sources */,
 				E6BFEC472358FA8100AA31CF /* ImageLoader.swift in Sources */,
 				E61014402359E8AA0093742C /* RegistrationScreen.swift in Sources */,
