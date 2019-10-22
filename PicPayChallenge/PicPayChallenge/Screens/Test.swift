@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct Test: View {
+public struct Test: View {
     @Binding var value:String
     @State private var rect:CGRect = CGRect()
     @State private var edition:Bool = false
@@ -16,7 +16,7 @@ struct Test: View {
     let TypeKeyBoard:UIKeyboardType
     let placeHoad:String
     let row:Int
-    var body: some View {
+    public var body: some View {
         VStack{
             HStack{
                 if(self.edition){

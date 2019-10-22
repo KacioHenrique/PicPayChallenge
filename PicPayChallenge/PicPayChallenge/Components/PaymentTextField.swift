@@ -14,7 +14,7 @@ struct PaymentTextField: View {
     var body: some View {
         HStack{
             Text("R$").font(.custom("SF UI Text;", size: 18))
-            TextField(text.value, text: $text.value).font(.custom("SF UI Text;", size: 54)).keyboardType(.decimalPad)
+            TextField("", text: $text.value).font(.custom("SF UI Text;", size: 54)).keyboardType(.decimalPad)
         }.foregroundColor(self.text.colorChange).padding(.leading, 100)
     }
 }
