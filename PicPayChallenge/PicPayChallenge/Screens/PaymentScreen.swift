@@ -10,24 +10,22 @@ import SwiftUI
 
 struct PaymentScreen: View {
     @ObservedObject var mecaninc = MechanicalPaymentview()
-    let people:PeopleModel
-    init(data people:PeopleModel){
-        self.people = people
-    }
+    @Binding var isOn:Bool
+    let people:PeopleModel?
     @State var presentation = false
+    
     var body: some View {
         NavigationView{
             VStack{
-                PeopleCellPaymentScreen(data: people)
+                PeopleCellPaymentScreen(data: self.people!)
                 Spacer()
                 PaymentTextField(text: mecaninc)
                 Spacer()
                 HStack{
                     Text("Mastercard 1234 •").font(.custom("SF UI Text;", size: 16))
-                    NavigationLink(destination: RegistrationScreen()) {
-                        Text("EDITAR").font(.custom("SF UI Text;", size: 16)).foregroundColor(Color(#colorLiteral(red: 0, green: 0.7864664197, blue: 0.4217334986, alpha: 1)))
+                    Text("EDITAR").font(.custom("SF UI Text;", size: 16)).foregroundColor(Color(#colorLiteral(red: 0, green: 0.7864664197, blue: 0.4217334986, alpha: 1))).onTapGesture {
+                        self.isOn.toggle()
                     }
-                    
                 }
                 Spacer()
                 Button(action: {
@@ -42,7 +40,7 @@ struct PaymentScreen: View {
                     .animation(Animation.spring().speed(2))
                     .font(.custom("SF UI Text;", size: 18))
                     .sheet(isPresented: $presentation) {
-                        PaymentReceiptScreen(people: self.people, paymentamount: self.mecaninc.value)
+                        PaymentReceiptScreen(people: self.people!, paymentamount: self.mecaninc.value)
                 }
                 Spacer()
             }
@@ -50,8 +48,8 @@ struct PaymentScreen: View {
     }
 }
 
-struct PaymentScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        PaymentScreen(data:PeopleModel(id: 100, name: "Kacio Henrique", img: "bla", username: "@KacioReis"))
-    }
-}
+//struct PaymentScreen_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PaymentScreen(data:PeopleModel(id: 100, name: "Kacio Henrique", img: "bla", username: "@KacioReis"))
+//    }
+//}

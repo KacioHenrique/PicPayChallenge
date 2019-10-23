@@ -13,8 +13,11 @@ struct RegistrationScreen: View {
     @ObservedObject private var kGuardian = KeyboardGuardian(textFieldCount: 3)
     var body: some View {
         VStack{
-            
-            Spacer()
+            HStack{
+                Text("Cadastrar cartão").font(.custom("SF UI Text;", size: 28)).padding()
+                 Spacer()
+            }
+            //Spacer()
             PaymentText(value: $card.numberCard, showField: $kGuardian.showField, TypeKeyBoard: .namePhonePad, placeHoad: "Número do Cartão", row: 0).background(GeometryGetter(rect: $kGuardian.rects[0]))
             Spacer()
             PaymentText(value: $card.cardholderName, showField: $kGuardian.showField, TypeKeyBoard: .namePhonePad, placeHoad: "Nome do titular", row: 1).background(GeometryGetter(rect: $kGuardian.rects[1]))

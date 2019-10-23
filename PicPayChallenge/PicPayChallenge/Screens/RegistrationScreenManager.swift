@@ -11,14 +11,16 @@ import SwiftUI
 struct RegistrationScreenManager: View {
     @State var isOn = false
     var body: some View {
-        ZStack{
-            if(!isOn){
-                PrimingRegistrationScreen(isOn: $isOn)
+            VStack{
+                if(!isOn){
+                    PrimingRegistrationScreen(isOn: $isOn)
+                }
+                else{
+                   RegistrationScreen()
+                }
+                Spacer()
+
             }
-            else{
-               RegistrationScreen()
-            }
-        }
        
     }
 }

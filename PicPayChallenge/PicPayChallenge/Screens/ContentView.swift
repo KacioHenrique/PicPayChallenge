@@ -24,7 +24,7 @@ struct ContentView: View {
                                 in
                                 HStack {
                                       PeopleCell(name: people.name, userName: people.username, imageUrl:people.img)
-                                    NavigationLink(destination: PaymentScreen(data: people)) {
+                                    NavigationLink(destination:PaymentScreenManeger(people: people)) {
                                         EmptyView()
                                     }
                                 }

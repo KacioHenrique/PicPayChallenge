@@ -13,6 +13,7 @@
 		E652CC31235C9FBC0084E07D /* PaymentText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E652CC30235C9FBC0084E07D /* PaymentText.swift */; };
 		E652CC33235CDE350084E07D /* PaymentReceiptScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E652CC32235CDE350084E07D /* PaymentReceiptScreen.swift */; };
 		E6587C572360669800A4E4A0 /* RegistrationScreenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6587C562360669800A4E4A0 /* RegistrationScreenManager.swift */; };
+		E6587C59236075B400A4E4A0 /* PaymentScreenManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6587C58236075B400A4E4A0 /* PaymentScreenManeger.swift */; };
 		E6776AB4235DE1E700F97A7B /* GeometryGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6776AB3235DE1E700F97A7B /* GeometryGetter.swift */; };
 		E6776AB8235DF6EE00F97A7B /* PayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6776AB7235DF6EE00F97A7B /* PayCard.swift */; };
 		E6776AC2235E497200F97A7B /* KeyBoardGuardian.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6776AC1235E497200F97A7B /* KeyBoardGuardian.swift */; };
@@ -42,6 +43,7 @@
 		E652CC30235C9FBC0084E07D /* PaymentText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaymentText.swift; path = PicPayChallenge/Screens/PaymentText.swift; sourceTree = SOURCE_ROOT; };
 		E652CC32235CDE350084E07D /* PaymentReceiptScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentReceiptScreen.swift; sourceTree = "<group>"; };
 		E6587C562360669800A4E4A0 /* RegistrationScreenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationScreenManager.swift; sourceTree = "<group>"; };
+		E6587C58236075B400A4E4A0 /* PaymentScreenManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentScreenManeger.swift; sourceTree = "<group>"; };
 		E6776AB3235DE1E700F97A7B /* GeometryGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryGetter.swift; sourceTree = "<group>"; };
 		E6776AB7235DF6EE00F97A7B /* PayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCard.swift; sourceTree = "<group>"; };
 		E6776AC1235E497200F97A7B /* KeyBoardGuardian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardGuardian.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				E610143F2359E8AA0093742C /* RegistrationScreen.swift */,
 				E652CC32235CDE350084E07D /* PaymentReceiptScreen.swift */,
 				E6587C562360669800A4E4A0 /* RegistrationScreenManager.swift */,
+				E6587C58236075B400A4E4A0 /* PaymentScreenManeger.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				E69374442358A7DE0018C0A3 /* ContentView.swift in Sources */,
 				E6BFEC4B235902F600AA31CF /* PeopleCell.swift in Sources */,
 				E610143E2359D1440093742C /* PrimingRegistrationScreen.swift in Sources */,
+				E6587C59236075B400A4E4A0 /* PaymentScreenManeger.swift in Sources */,
 				E6587C572360669800A4E4A0 /* RegistrationScreenManager.swift in Sources */,
 				E6BFEC412358D7EE00AA31CF /* PeopleModel.swift in Sources */,
 				E6D70091235B4DF100CFDF0F /* PaymentTextField.swift in Sources */,
