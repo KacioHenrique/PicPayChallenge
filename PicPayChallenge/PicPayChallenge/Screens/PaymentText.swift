@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-public struct Test: View {
+public struct PaymentText: View {
     @Binding var value:String
     @State private var rect:CGRect = CGRect()
     @State private var edition:Bool = false

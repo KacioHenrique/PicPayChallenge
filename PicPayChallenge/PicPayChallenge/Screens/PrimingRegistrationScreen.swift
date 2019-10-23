@@ -9,9 +9,8 @@
 import SwiftUI
 
 struct PrimingRegistrationScreen: View {
-    @State private var show_modal = false
+    @Binding var isOn:Bool
     var body: some View {
-        NavigationView{
             VStack{
                 Spacer()
                 Image("ilustration_creditcard")
@@ -20,19 +19,19 @@ struct PrimingRegistrationScreen: View {
                 Text("Para fazer pagamentos para outras pessoas você precisa cadastrar um cartão de crédito pessoal.")
                     .multilineTextAlignment(.center)
                 Spacer()
-                NavigationLink.init(destination: RegistrationScreen()) {
-                    Text("here")
-                }
+                Button(action: {
+                    self.isOn.toggle()
+                }) {
+                    Text("Cadastrar cartão")
+                }.buttonStyle(MainButtonStyle())
+                Spacer()
             }.frame(width:CGFloat(320), alignment: .center)
-           .navigationBarHidden(true)
-           .navigationBarTitle(Text("Home"))
-           .edgesIgnoringSafeArea([.top, .bottom])
-        }
     }
 }
 
-struct PrimingRegistrationScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        PrimingRegistrationScreen()
-    }
-}
+//struct PrimingRegistrationScreen_Previews: PreviewProvider {
+//    static var previews: some View {
+//       
+//        PrimingRegistrationScreen()
+//    }
+//}
