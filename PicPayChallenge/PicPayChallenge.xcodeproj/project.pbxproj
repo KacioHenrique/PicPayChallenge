@@ -10,6 +10,7 @@
 		978A4C9C2361DE85004B2C61 /* SaveName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978A4C9B2361DE85004B2C61 /* SaveName.swift */; };
 		978A4CA02361E287004B2C61 /* ManegerUserDefaultCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978A4C9F2361E287004B2C61 /* ManegerUserDefaultCard.swift */; };
 		978A4CA22361EFDA004B2C61 /* CardCompositionElementsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978A4CA12361EFDA004B2C61 /* CardCompositionElementsEnum.swift */; };
+		978A4CA42361FA50004B2C61 /* KeyBordSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978A4CA32361FA50004B2C61 /* KeyBordSlide.swift */; };
 		E610143E2359D1440093742C /* PrimingRegistrationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E610143D2359D1440093742C /* PrimingRegistrationScreen.swift */; };
 		E61014402359E8AA0093742C /* RegistrationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E610143F2359E8AA0093742C /* RegistrationScreen.swift */; };
 		E652CC2F235C72060084E07D /* MechanicalPaymentview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E652CC2E235C72060084E07D /* MechanicalPaymentview.swift */; };
@@ -43,6 +44,7 @@
 		978A4C9B2361DE85004B2C61 /* SaveName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveName.swift; sourceTree = "<group>"; };
 		978A4C9F2361E287004B2C61 /* ManegerUserDefaultCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManegerUserDefaultCard.swift; sourceTree = "<group>"; };
 		978A4CA12361EFDA004B2C61 /* CardCompositionElementsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCompositionElementsEnum.swift; sourceTree = "<group>"; };
+		978A4CA32361FA50004B2C61 /* KeyBordSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBordSlide.swift; sourceTree = "<group>"; };
 		E610143D2359D1440093742C /* PrimingRegistrationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimingRegistrationScreen.swift; sourceTree = "<group>"; };
 		E610143F2359E8AA0093742C /* RegistrationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationScreen.swift; sourceTree = "<group>"; };
 		E652CC2E235C72060084E07D /* MechanicalPaymentview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechanicalPaymentview.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				E6776AC1235E497200F97A7B /* KeyBoardGuardian.swift */,
 				978A4C9F2361E287004B2C61 /* ManegerUserDefaultCard.swift */,
 				978A4CA12361EFDA004B2C61 /* CardCompositionElementsEnum.swift */,
+				978A4CA32361FA50004B2C61 /* KeyBordSlide.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				978A4C9C2361DE85004B2C61 /* SaveName.swift in Sources */,
 				E6D7008F235B38E400CFDF0F /* PeopleCellPaymentScreen.swift in Sources */,
 				E652CC31235C9FBC0084E07D /* PaymentText.swift in Sources */,
+				978A4CA42361FA50004B2C61 /* KeyBordSlide.swift in Sources */,
 				E6D7008D235B389A00CFDF0F /* PaymentScreen.swift in Sources */,
 				E6776AC2235E497200F97A7B /* KeyBoardGuardian.swift in Sources */,
 				E6776AB4235DE1E700F97A7B /* GeometryGetter.swift in Sources */,

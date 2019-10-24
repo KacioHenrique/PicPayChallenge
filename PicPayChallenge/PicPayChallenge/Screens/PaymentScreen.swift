@@ -12,6 +12,7 @@ struct PaymentScreen: View {
     @ObservedObject var mecaninc = MechanicalPaymentview()
     @Binding var isOn:Bool
     let people:PeopleModel?
+    @ObservedObject var keybord = KeyBordSlide()
     @State var presentation = false
     let userDefault = ManegerUserDefaultCard()
     var body: some View {
@@ -44,7 +45,7 @@ struct PaymentScreen: View {
                 }
                 Spacer()
             }
-        }
+            }.offset(y:-keybord.slide)
     }
 }
 
