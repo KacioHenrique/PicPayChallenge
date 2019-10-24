@@ -33,25 +33,31 @@ public class MechanicalPaymentview:ObservableObject{
     }
     func insertValue(){
         if value.isEmpty{
-            self.previousStringValue = "0,00"
-            self.value = self.previousStringValue
+            self.reInitTextPayment()
             return
         }
         if previousStringValue == self.value {
             return
         }
+        
         var elements = self.value.reduce([]) { (arry, element) -> [Character] in
             var vet = arry
             vet.append(element)
             return vet
         }
-        let index = find(item: ",", array: elements)
-        if(index == -1){
-            self.previousStringValue = "0,00"
-            self.value = self.previousStringValue
+        if elements[0] == "," {
+            self.reInitTextPayment()
             return
         }
-        if(self.previousStringValue.count < self.value.count){
+        let index = find(item: ",", array: elements)
+        if(index == -1){
+            self.reInitTextPayment()
+            return
+        }
+        if((self.value.count-1) - index < 2){
+            elements.append("0")
+        }
+        else if(self.previousStringValue.count < self.value.count){
             //insert R
             insertR(&elements)
         }
@@ -62,6 +68,10 @@ public class MechanicalPaymentview:ObservableObject{
             }
         }
         self.previousStringValue = arryCharInString(elements)
+        self.value = self.previousStringValue
+    }
+    func reInitTextPayment(){
+        self.previousStringValue = "0,00"
         self.value = self.previousStringValue
     }
 }
