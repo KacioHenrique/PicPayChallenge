@@ -10,12 +10,20 @@ import Foundation
 import SwiftUI
 import Combine
 class CardPay:ObservableObject{
+    var userDefault = ManegerUserDefaultCard()
     @Published var numberCard = "" {
         didSet{
             self.isValid = self.checkIsValidate()
         }
     }
-    @Published var isValid = false
+    @Published var isValid = false{
+        didSet{
+            if(self.isValid){
+               
+            }
+            
+        }
+    }
 
     @Published var cardholderName = "" {
         didSet{
@@ -37,6 +45,12 @@ class CardPay:ObservableObject{
             return true
         }
         return false
+    }
+    func registerCard(){
+        userDefault.salveData(key:.cardholderName, data: self.cardholderName)
+        userDefault.salveData(key: .expiry, data: self.expiry)
+        userDefault.salveData(key: .cvv, data: self.cvv)
+        userDefault.salveData(key: .numberCard, data: self.numberCard)
     }
 }
 

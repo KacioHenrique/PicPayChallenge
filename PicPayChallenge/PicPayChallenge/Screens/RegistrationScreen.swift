@@ -28,8 +28,9 @@ struct RegistrationScreen: View {
             }
             if(card.isValid){
                 Button(action: {
+                    self.card.registerCard()
                 }) {
-                    
+                  
                     Text("Cadastrar cartão")
                     
                 }.buttonStyle(MainButtonStyle())

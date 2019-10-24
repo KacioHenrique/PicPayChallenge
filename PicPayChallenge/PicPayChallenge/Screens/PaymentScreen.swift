@@ -13,7 +13,7 @@ struct PaymentScreen: View {
     @Binding var isOn:Bool
     let people:PeopleModel?
     @State var presentation = false
-    
+    let userDefault = ManegerUserDefaultCard()
     var body: some View {
         NavigationView{
             VStack{
@@ -22,7 +22,7 @@ struct PaymentScreen: View {
                 PaymentTextField(text: mecaninc)
                 Spacer()
                 HStack{
-                    Text("Mastercard 1234 •").font(.custom("SF UI Text;", size: 16))
+                    Text("\(userDefault.getValue(.numberCard)) •").font(.custom("SF UI Text;", size: 16))
                     Text("EDITAR").font(.custom("SF UI Text;", size: 16)).foregroundColor(Color(#colorLiteral(red: 0, green: 0.7864664197, blue: 0.4217334986, alpha: 1))).onTapGesture {
                         self.isOn.toggle()
                     }
