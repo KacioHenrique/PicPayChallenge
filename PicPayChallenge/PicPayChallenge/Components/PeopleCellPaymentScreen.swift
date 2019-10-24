@@ -10,6 +10,7 @@ import SwiftUI
 
 struct PeopleCellPaymentScreen: View {
     var peopleModel:PeopleModel
+    let size:CGFloat = 0
     init(data people:PeopleModel){
         peopleModel = people
     }

@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-
 public struct PaymentText: View {
     @Binding var value:String
     @State private var rect:CGRect = CGRect()

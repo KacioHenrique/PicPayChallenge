@@ -10,7 +10,7 @@ import SwiftUI
 
 struct RegistrationScreen: View {
     @ObservedObject var card:CardPay = CardPay()
-    @ObservedObject private var kGuardian = KeyboardGuardian(textFieldCount: 3)
+    @ObservedObject private var kGuardian = KeyboardGuardian(textFieldCount: 4)
     var body: some View {
         VStack{
             HStack{
@@ -24,7 +24,7 @@ struct RegistrationScreen: View {
             Spacer()
             HStack{
                 PaymentText(value: $card.expiry, showField: $kGuardian.showField, TypeKeyBoard: .numbersAndPunctuation, placeHoad: "Vencimento", row: 2).background(GeometryGetter(rect: $kGuardian.rects[2]))
-                PaymentText(value: $card.cvv, showField: $kGuardian.showField, TypeKeyBoard: .numbersAndPunctuation, placeHoad: "CVV", row: 2).background(GeometryGetter(rect: $kGuardian.rects[2]))
+                PaymentText(value: $card.cvv, showField: $kGuardian.showField, TypeKeyBoard: .numbersAndPunctuation, placeHoad: "CVV", row: 3).background(GeometryGetter(rect: $kGuardian.rects[3]))
             }
             if(card.isValid){
                 Button(action: {
