@@ -13,6 +13,8 @@
 		978A4CA42361FA50004B2C61 /* KeyBordSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978A4CA32361FA50004B2C61 /* KeyBordSlide.swift */; };
 		978A4CA62362191F004B2C61 /* DateFormart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978A4CA52362191E004B2C61 /* DateFormart.swift */; };
 		978A4CAA23621F6E004B2C61 /* ReceiptScreenDisplayText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978A4CA923621F6E004B2C61 /* ReceiptScreenDisplayText.swift */; };
+		978A4CAE2368A541004B2C61 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978A4CAD2368A541004B2C61 /* TransactionModel.swift */; };
+		978A4CB02368A5BF004B2C61 /* NetworkManegerPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978A4CAF2368A5BF004B2C61 /* NetworkManegerPost.swift */; };
 		E610143E2359D1440093742C /* PrimingRegistrationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E610143D2359D1440093742C /* PrimingRegistrationScreen.swift */; };
 		E61014402359E8AA0093742C /* RegistrationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E610143F2359E8AA0093742C /* RegistrationScreen.swift */; };
 		E652CC2F235C72060084E07D /* MechanicalPaymentview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E652CC2E235C72060084E07D /* MechanicalPaymentview.swift */; };
@@ -49,6 +51,8 @@
 		978A4CA32361FA50004B2C61 /* KeyBordSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBordSlide.swift; sourceTree = "<group>"; };
 		978A4CA52362191E004B2C61 /* DateFormart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormart.swift; sourceTree = "<group>"; };
 		978A4CA923621F6E004B2C61 /* ReceiptScreenDisplayText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptScreenDisplayText.swift; sourceTree = "<group>"; };
+		978A4CAD2368A541004B2C61 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		978A4CAF2368A5BF004B2C61 /* NetworkManegerPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManegerPost.swift; sourceTree = "<group>"; };
 		E610143D2359D1440093742C /* PrimingRegistrationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimingRegistrationScreen.swift; sourceTree = "<group>"; };
 		E610143F2359E8AA0093742C /* RegistrationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationScreen.swift; sourceTree = "<group>"; };
 		E652CC2E235C72060084E07D /* MechanicalPaymentview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechanicalPaymentview.swift; sourceTree = "<group>"; };
@@ -147,6 +151,8 @@
 				978A4CA12361EFDA004B2C61 /* CardCompositionElementsEnum.swift */,
 				978A4CA32361FA50004B2C61 /* KeyBordSlide.swift */,
 				978A4CA52362191E004B2C61 /* DateFormart.swift */,
+				978A4CAD2368A541004B2C61 /* TransactionModel.swift */,
+				978A4CAF2368A5BF004B2C61 /* NetworkManegerPost.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -254,6 +260,7 @@
 			files = (
 				E6BFEC492358FE6200AA31CF /* ImagePeopleCell.swift in Sources */,
 				E652CC2F235C72060084E07D /* MechanicalPaymentview.swift in Sources */,
+				978A4CB02368A5BF004B2C61 /* NetworkManegerPost.swift in Sources */,
 				E652CC33235CDE350084E07D /* PaymentReceiptScreen.swift in Sources */,
 				E693743D2358A7DE0018C0A3 /* AppDelegate.swift in Sources */,
 				978A4CA62362191F004B2C61 /* DateFormart.swift in Sources */,
@@ -278,6 +285,7 @@
 				E6776AB4235DE1E700F97A7B /* GeometryGetter.swift in Sources */,
 				E6BFEC4F23590B6E00AA31CF /* SearchBar.swift in Sources */,
 				E6BFEC472358FA8100AA31CF /* ImageLoader.swift in Sources */,
+				978A4CAE2368A541004B2C61 /* TransactionModel.swift in Sources */,
 				978A4CA22361EFDA004B2C61 /* CardCompositionElementsEnum.swift in Sources */,
 				E61014402359E8AA0093742C /* RegistrationScreen.swift in Sources */,
 				E6BFEC5523592B4500AA31CF /* CustomMainButton.swift in Sources */,
