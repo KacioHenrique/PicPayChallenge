@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		978A4C9C2361DE85004B2C61 /* SaveName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978A4C9B2361DE85004B2C61 /* SaveName.swift */; };
 		978A4CA02361E287004B2C61 /* ManegerUserDefaultCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978A4C9F2361E287004B2C61 /* ManegerUserDefaultCard.swift */; };
 		978A4CA22361EFDA004B2C61 /* CardCompositionElementsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978A4CA12361EFDA004B2C61 /* CardCompositionElementsEnum.swift */; };
 		978A4CA42361FA50004B2C61 /* KeyBordSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978A4CA32361FA50004B2C61 /* KeyBordSlide.swift */; };
@@ -45,7 +44,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		978A4C9B2361DE85004B2C61 /* SaveName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveName.swift; sourceTree = "<group>"; };
 		978A4C9F2361E287004B2C61 /* ManegerUserDefaultCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManegerUserDefaultCard.swift; sourceTree = "<group>"; };
 		978A4CA12361EFDA004B2C61 /* CardCompositionElementsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCompositionElementsEnum.swift; sourceTree = "<group>"; };
 		978A4CA32361FA50004B2C61 /* KeyBordSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBordSlide.swift; sourceTree = "<group>"; };
@@ -125,7 +123,6 @@
 				E693744D2358A7E20018C0A3 /* Info.plist */,
 				E69374402358A7DE0018C0A3 /* PicPayChallenge.xcdatamodeld */,
 				E69374472358A7E20018C0A3 /* Preview Content */,
-				978A4C9B2361DE85004B2C61 /* SaveName.swift */,
 			);
 			path = PicPayChallenge;
 			sourceTree = "<group>";
@@ -276,7 +273,6 @@
 				978A4CAA23621F6E004B2C61 /* ReceiptScreenDisplayText.swift in Sources */,
 				E6BFEC412358D7EE00AA31CF /* PeopleModel.swift in Sources */,
 				E6D70091235B4DF100CFDF0F /* PaymentTextField.swift in Sources */,
-				978A4C9C2361DE85004B2C61 /* SaveName.swift in Sources */,
 				E6D7008F235B38E400CFDF0F /* PeopleCellPaymentScreen.swift in Sources */,
 				E652CC31235C9FBC0084E07D /* PaymentText.swift in Sources */,
 				978A4CA42361FA50004B2C61 /* KeyBordSlide.swift in Sources */,
