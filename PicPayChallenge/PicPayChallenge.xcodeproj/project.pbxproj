@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		978A4C9C2361DE85004B2C61 /* SaveName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978A4C9B2361DE85004B2C61 /* SaveName.swift */; };
+		978A4CA02361E287004B2C61 /* ManegerUserDefaultCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978A4C9F2361E287004B2C61 /* ManegerUserDefaultCard.swift */; };
+		978A4CA22361EFDA004B2C61 /* CardCompositionElementsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978A4CA12361EFDA004B2C61 /* CardCompositionElementsEnum.swift */; };
+		978A4CA42361FA50004B2C61 /* KeyBordSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978A4CA32361FA50004B2C61 /* KeyBordSlide.swift */; };
+		978A4CA62362191F004B2C61 /* DateFormart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978A4CA52362191E004B2C61 /* DateFormart.swift */; };
+		978A4CAA23621F6E004B2C61 /* ReceiptScreenDisplayText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978A4CA923621F6E004B2C61 /* ReceiptScreenDisplayText.swift */; };
+		978A4CAE2368A541004B2C61 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978A4CAD2368A541004B2C61 /* TransactionModel.swift */; };
+		978A4CB02368A5BF004B2C61 /* NetworkManegerPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978A4CAF2368A5BF004B2C61 /* NetworkManegerPost.swift */; };
+		E610143E2359D1440093742C /* PrimingRegistrationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E610143D2359D1440093742C /* PrimingRegistrationScreen.swift */; };
+		E61014402359E8AA0093742C /* RegistrationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E610143F2359E8AA0093742C /* RegistrationScreen.swift */; };
+		E652CC2F235C72060084E07D /* MechanicalPaymentview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E652CC2E235C72060084E07D /* MechanicalPaymentview.swift */; };
+		E652CC31235C9FBC0084E07D /* PaymentText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E652CC30235C9FBC0084E07D /* PaymentText.swift */; };
+		E652CC33235CDE350084E07D /* PaymentReceiptScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E652CC32235CDE350084E07D /* PaymentReceiptScreen.swift */; };
+		E6587C572360669800A4E4A0 /* RegistrationScreenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6587C562360669800A4E4A0 /* RegistrationScreenManager.swift */; };
+		E6587C59236075B400A4E4A0 /* PaymentScreenManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6587C58236075B400A4E4A0 /* PaymentScreenManeger.swift */; };
+		E6776AB4235DE1E700F97A7B /* GeometryGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6776AB3235DE1E700F97A7B /* GeometryGetter.swift */; };
+		E6776AB8235DF6EE00F97A7B /* PayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6776AB7235DF6EE00F97A7B /* PayCard.swift */; };
+		E6776AC2235E497200F97A7B /* KeyBoardGuardian.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6776AC1235E497200F97A7B /* KeyBoardGuardian.swift */; };
+		E693743D2358A7DE0018C0A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E693743C2358A7DE0018C0A3 /* AppDelegate.swift */; };
+		E693743F2358A7DE0018C0A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E693743E2358A7DE0018C0A3 /* SceneDelegate.swift */; };
+		E69374422358A7DE0018C0A3 /* PicPayChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E69374402358A7DE0018C0A3 /* PicPayChallenge.xcdatamodeld */; };
+		E69374442358A7DE0018C0A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69374432358A7DE0018C0A3 /* ContentView.swift */; };
+		E69374462358A7E20018C0A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E69374452358A7E20018C0A3 /* Assets.xcassets */; };
+		E69374492358A7E20018C0A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E69374482358A7E20018C0A3 /* Preview Assets.xcassets */; };
+		E693744C2358A7E20018C0A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E693744A2358A7E20018C0A3 /* LaunchScreen.storyboard */; };
+		E6BFEC412358D7EE00AA31CF /* PeopleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BFEC402358D7EE00AA31CF /* PeopleModel.swift */; };
+		E6BFEC432358D8EC00AA31CF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BFEC422358D8EC00AA31CF /* NetworkManager.swift */; };
+		E6BFEC472358FA8100AA31CF /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BFEC462358FA8100AA31CF /* ImageLoader.swift */; };
+		E6BFEC492358FE6200AA31CF /* ImagePeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BFEC482358FE6200AA31CF /* ImagePeopleCell.swift */; };
+		E6BFEC4B235902F600AA31CF /* PeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BFEC4A235902F600AA31CF /* PeopleCell.swift */; };
+		E6BFEC4F23590B6E00AA31CF /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BFEC4E23590B6E00AA31CF /* SearchBar.swift */; };
+		E6BFEC5523592B4500AA31CF /* CustomMainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BFEC5423592B4500AA31CF /* CustomMainButton.swift */; };
+		E6D7008D235B389A00CFDF0F /* PaymentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D7008C235B389A00CFDF0F /* PaymentScreen.swift */; };
+		E6D7008F235B38E400CFDF0F /* PeopleCellPaymentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D7008E235B38E400CFDF0F /* PeopleCellPaymentScreen.swift */; };
+		E6D70091235B4DF100CFDF0F /* PaymentTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D70090235B4DF100CFDF0F /* PaymentTextField.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		978A4C9B2361DE85004B2C61 /* SaveName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveName.swift; sourceTree = "<group>"; };
+		978A4C9F2361E287004B2C61 /* ManegerUserDefaultCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManegerUserDefaultCard.swift; sourceTree = "<group>"; };
+		978A4CA12361EFDA004B2C61 /* CardCompositionElementsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCompositionElementsEnum.swift; sourceTree = "<group>"; };
+		978A4CA32361FA50004B2C61 /* KeyBordSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBordSlide.swift; sourceTree = "<group>"; };
+		978A4CA52362191E004B2C61 /* DateFormart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormart.swift; sourceTree = "<group>"; };
+		978A4CA923621F6E004B2C61 /* ReceiptScreenDisplayText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptScreenDisplayText.swift; sourceTree = "<group>"; };
+		978A4CAD2368A541004B2C61 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		978A4CAF2368A5BF004B2C61 /* NetworkManegerPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManegerPost.swift; sourceTree = "<group>"; };
+		E610143D2359D1440093742C /* PrimingRegistrationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimingRegistrationScreen.swift; sourceTree = "<group>"; };
+		E610143F2359E8AA0093742C /* RegistrationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationScreen.swift; sourceTree = "<group>"; };
+		E652CC2E235C72060084E07D /* MechanicalPaymentview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechanicalPaymentview.swift; sourceTree = "<group>"; };
+		E652CC30235C9FBC0084E07D /* PaymentText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaymentText.swift; path = PicPayChallenge/Components/PaymentText.swift; sourceTree = SOURCE_ROOT; };
+		E652CC32235CDE350084E07D /* PaymentReceiptScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentReceiptScreen.swift; sourceTree = "<group>"; };
+		E6587C562360669800A4E4A0 /* RegistrationScreenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationScreenManager.swift; sourceTree = "<group>"; };
+		E6587C58236075B400A4E4A0 /* PaymentScreenManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentScreenManeger.swift; sourceTree = "<group>"; };
+		E6776AB3235DE1E700F97A7B /* GeometryGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryGetter.swift; sourceTree = "<group>"; };
+		E6776AB7235DF6EE00F97A7B /* PayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCard.swift; sourceTree = "<group>"; };
+		E6776AC1235E497200F97A7B /* KeyBoardGuardian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardGuardian.swift; sourceTree = "<group>"; };
+		E69374392358A7DE0018C0A3 /* PicPayChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicPayChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E693743C2358A7DE0018C0A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E693743E2358A7DE0018C0A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E69374412358A7DE0018C0A3 /* PicPayChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PicPayChallenge.xcdatamodel; sourceTree = "<group>"; };
+		E69374432358A7DE0018C0A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E69374452358A7E20018C0A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E69374482358A7E20018C0A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E693744B2358A7E20018C0A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E693744D2358A7E20018C0A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6BFEC402358D7EE00AA31CF /* PeopleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleModel.swift; sourceTree = "<group>"; };
+		E6BFEC422358D8EC00AA31CF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E6BFEC462358FA8100AA31CF /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		E6BFEC482358FE6200AA31CF /* ImagePeopleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePeopleCell.swift; sourceTree = "<group>"; };
+		E6BFEC4A235902F600AA31CF /* PeopleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCell.swift; sourceTree = "<group>"; };
+		E6BFEC4E23590B6E00AA31CF /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		E6BFEC5423592B4500AA31CF /* CustomMainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMainButton.swift; sourceTree = "<group>"; };
+		E6D7008C235B389A00CFDF0F /* PaymentScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentScreen.swift; sourceTree = "<group>"; };
+		E6D7008E235B38E400CFDF0F /* PeopleCellPaymentScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCellPaymentScreen.swift; sourceTree = "<group>"; };
+		E6D70090235B4DF100CFDF0F /* PaymentTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTextField.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E69374362358A7DE0018C0A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E69374302358A7DE0018C0A3 = {
+			isa = PBXGroup;
+			children = (
+				E693743B2358A7DE0018C0A3 /* PicPayChallenge */,
+			);
+			sourceTree = "<group>";
+		};
+		E693743A2358A7DE0018C0A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E69374392358A7DE0018C0A3 /* PicPayChallenge.app */,
+			);
+			name = Products;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E693743B2358A7DE0018C0A3 /* PicPayChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				E6BFEC53235927B000AA31CF /* Screens */,
+				E6BFEC52235925D700AA31CF /* Components */,
+				E6BFEC3F2358D7BE00AA31CF /* Model */,
+				E693743C2358A7DE0018C0A3 /* AppDelegate.swift */,
+				E693743E2358A7DE0018C0A3 /* SceneDelegate.swift */,
+				E693743A2358A7DE0018C0A3 /* Products */,
+				E69374452358A7E20018C0A3 /* Assets.xcassets */,
+				E693744A2358A7E20018C0A3 /* LaunchScreen.storyboard */,
+				E693744D2358A7E20018C0A3 /* Info.plist */,
+				E69374402358A7DE0018C0A3 /* PicPayChallenge.xcdatamodeld */,
+				E69374472358A7E20018C0A3 /* Preview Content */,
+				978A4C9B2361DE85004B2C61 /* SaveName.swift */,
+			);
+			path = PicPayChallenge;
+			sourceTree = "<group>";
+		};
+		E69374472358A7E20018C0A3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E69374482358A7E20018C0A3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E6BFEC3F2358D7BE00AA31CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E6BFEC402358D7EE00AA31CF /* PeopleModel.swift */,
+				E6BFEC422358D8EC00AA31CF /* NetworkManager.swift */,
+				E6BFEC462358FA8100AA31CF /* ImageLoader.swift */,
+				E652CC2E235C72060084E07D /* MechanicalPaymentview.swift */,
+				E6776AB7235DF6EE00F97A7B /* PayCard.swift */,
+				E6776AC1235E497200F97A7B /* KeyBoardGuardian.swift */,
+				978A4C9F2361E287004B2C61 /* ManegerUserDefaultCard.swift */,
+				978A4CA12361EFDA004B2C61 /* CardCompositionElementsEnum.swift */,
+				978A4CA32361FA50004B2C61 /* KeyBordSlide.swift */,
+				978A4CA52362191E004B2C61 /* DateFormart.swift */,
+				978A4CAD2368A541004B2C61 /* TransactionModel.swift */,
+				978A4CAF2368A5BF004B2C61 /* NetworkManegerPost.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E6BFEC52235925D700AA31CF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E652CC30235C9FBC0084E07D /* PaymentText.swift */,
+				E6BFEC4A235902F600AA31CF /* PeopleCell.swift */,
+				E6BFEC4E23590B6E00AA31CF /* SearchBar.swift */,
+				E6BFEC482358FE6200AA31CF /* ImagePeopleCell.swift */,
+				E6BFEC5423592B4500AA31CF /* CustomMainButton.swift */,
+				E6D7008E235B38E400CFDF0F /* PeopleCellPaymentScreen.swift */,
+				E6D70090235B4DF100CFDF0F /* PaymentTextField.swift */,
+				E6776AB3235DE1E700F97A7B /* GeometryGetter.swift */,
+				978A4CA923621F6E004B2C61 /* ReceiptScreenDisplayText.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E6BFEC53235927B000AA31CF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E69374432358A7DE0018C0A3 /* ContentView.swift */,
+				E610143D2359D1440093742C /* PrimingRegistrationScreen.swift */,
+				E6D7008C235B389A00CFDF0F /* PaymentScreen.swift */,
+				E610143F2359E8AA0093742C /* RegistrationScreen.swift */,
+				E652CC32235CDE350084E07D /* PaymentReceiptScreen.swift */,
+				E6587C562360669800A4E4A0 /* RegistrationScreenManager.swift */,
+				E6587C58236075B400A4E4A0 /* PaymentScreenManeger.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E69374382358A7DE0018C0A3 /* PicPayChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E69374502358A7E20018C0A3 /* Build configuration list for PBXNativeTarget "PicPayChallenge" */;
+			buildPhases = (
+				E69374352358A7DE0018C0A3 /* Sources */,
+				E69374362358A7DE0018C0A3 /* Frameworks */,
+				E69374372358A7DE0018C0A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PicPayChallenge;
+			productName = PicPayChallenge;
+			productReference = E69374392358A7DE0018C0A3 /* PicPayChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E69374312358A7DE0018C0A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = Kacio;
+				TargetAttributes = {
+					E69374382358A7DE0018C0A3 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = E69374342358A7DE0018C0A3 /* Build configuration list for PBXProject "PicPayChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E69374302358A7DE0018C0A3;
+			productRefGroup = E693743A2358A7DE0018C0A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E69374382358A7DE0018C0A3 /* PicPayChallenge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E69374372358A7DE0018C0A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E693744C2358A7E20018C0A3 /* LaunchScreen.storyboard in Resources */,
+				E69374492358A7E20018C0A3 /* Preview Assets.xcassets in Resources */,
+				E69374462358A7E20018C0A3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E69374352358A7DE0018C0A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6BFEC492358FE6200AA31CF /* ImagePeopleCell.swift in Sources */,
+				E652CC2F235C72060084E07D /* MechanicalPaymentview.swift in Sources */,
+				978A4CB02368A5BF004B2C61 /* NetworkManegerPost.swift in Sources */,
+				E652CC33235CDE350084E07D /* PaymentReceiptScreen.swift in Sources */,
+				E693743D2358A7DE0018C0A3 /* AppDelegate.swift in Sources */,
+				978A4CA62362191F004B2C61 /* DateFormart.swift in Sources */,
+				E69374422358A7DE0018C0A3 /* PicPayChallenge.xcdatamodeld in Sources */,
+				E6776AB8235DF6EE00F97A7B /* PayCard.swift in Sources */,
+				E6BFEC432358D8EC00AA31CF /* NetworkManager.swift in Sources */,
+				E69374442358A7DE0018C0A3 /* ContentView.swift in Sources */,
+				E6BFEC4B235902F600AA31CF /* PeopleCell.swift in Sources */,
+				E610143E2359D1440093742C /* PrimingRegistrationScreen.swift in Sources */,
+				978A4CA02361E287004B2C61 /* ManegerUserDefaultCard.swift in Sources */,
+				E6587C59236075B400A4E4A0 /* PaymentScreenManeger.swift in Sources */,
+				E6587C572360669800A4E4A0 /* RegistrationScreenManager.swift in Sources */,
+				978A4CAA23621F6E004B2C61 /* ReceiptScreenDisplayText.swift in Sources */,
+				E6BFEC412358D7EE00AA31CF /* PeopleModel.swift in Sources */,
+				E6D70091235B4DF100CFDF0F /* PaymentTextField.swift in Sources */,
+				978A4C9C2361DE85004B2C61 /* SaveName.swift in Sources */,
+				E6D7008F235B38E400CFDF0F /* PeopleCellPaymentScreen.swift in Sources */,
+				E652CC31235C9FBC0084E07D /* PaymentText.swift in Sources */,
+				978A4CA42361FA50004B2C61 /* KeyBordSlide.swift in Sources */,
+				E6D7008D235B389A00CFDF0F /* PaymentScreen.swift in Sources */,
+				E6776AC2235E497200F97A7B /* KeyBoardGuardian.swift in Sources */,
+				E6776AB4235DE1E700F97A7B /* GeometryGetter.swift in Sources */,
+				E6BFEC4F23590B6E00AA31CF /* SearchBar.swift in Sources */,
+				E6BFEC472358FA8100AA31CF /* ImageLoader.swift in Sources */,
+				978A4CAE2368A541004B2C61 /* TransactionModel.swift in Sources */,
+				978A4CA22361EFDA004B2C61 /* CardCompositionElementsEnum.swift in Sources */,
+				E61014402359E8AA0093742C /* RegistrationScreen.swift in Sources */,
+				E6BFEC5523592B4500AA31CF /* CustomMainButton.swift in Sources */,
+				E693743F2358A7DE0018C0A3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E693744A2358A7E20018C0A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E693744B2358A7E20018C0A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E693744E2358A7E20018C0A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E693744F2358A7E20018C0A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E69374512358A7E20018C0A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PicPayChallenge/Preview Content\"";
+				DEVELOPMENT_TEAM = 964DHL9J4R;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PicPayChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kacio.PicPayChallenge2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E69374522358A7E20018C0A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PicPayChallenge/Preview Content\"";
+				DEVELOPMENT_TEAM = 964DHL9J4R;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PicPayChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kacio.PicPayChallenge2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E69374342358A7DE0018C0A3 /* Build configuration list for PBXProject "PicPayChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E693744E2358A7E20018C0A3 /* Debug */,
+				E693744F2358A7E20018C0A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E69374502358A7E20018C0A3 /* Build configuration list for PBXNativeTarget "PicPayChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E69374512358A7E20018C0A3 /* Debug */,
+				E69374522358A7E20018C0A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E69374402358A7DE0018C0A3 /* PicPayChallenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E69374412358A7DE0018C0A3 /* PicPayChallenge.xcdatamodel */,
+			);
+			currentVersion = E69374412358A7DE0018C0A3 /* PicPayChallenge.xcdatamodel */;
+			path = PicPayChallenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E69374312358A7DE0018C0A3 /* Project object */;
+}
