@@ -11,21 +11,17 @@ import SwiftUI
 import Combine
 class NetworkManegerPost:ObservableObject{
     let url:String
-    let trasation:Transiation
     @Published var status:Bool = false
-    init(url:String,trasation:Transiation){
+    init(url:String){
         self.url = url
-        self.trasation = trasation
-        makePost(trasiation: trasation, url: url)
     }
-    func makePost(trasiation:Transiation,url:String){
-
+    func makePost(trasiation:Transiation){
         let encoder = JSONEncoder()
         encoder.outputFormatting = .withoutEscapingSlashes
         do {
             if let jsonData = try? encoder.encode(trasiation){
                 print(trasiation)
-                postRequest(url: url, data: jsonData)
+        postRequest(url: self.url, data: jsonData)
             }
         } catch {
             print("erro em json to data")

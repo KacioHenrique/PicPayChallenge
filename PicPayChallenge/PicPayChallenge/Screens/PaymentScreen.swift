@@ -14,6 +14,7 @@ struct PaymentScreen: View {
     let people:PeopleModel?
     @ObservedObject var keybord = KeyBordSlide()
     @State var presentation = false
+    @ObservedObject var postPayment = NetworkManegerPost(url:"http://careers.picpay.com/tests/mobdev/transaction")
     let userDefault = ManegerUserDefaultCard()
     var body: some View {
         NavigationView{
@@ -23,14 +24,19 @@ struct PaymentScreen: View {
                 PaymentTextField(text: mecaninc)
                 Spacer()
                 HStack{
-                    Text("\(userDefault.getValue(.numberCard)) •").font(.custom("SF UI Text;", size: 16))
+                    Text("\(userDefault.getValue(.numberCard) ?? "Sem Cartão") •").font(.custom("SF UI Text;", size: 16))
                     Text("EDITAR").font(.custom("SF UI Text;", size: 16)).foregroundColor(Color(#colorLiteral(red: 0, green: 0.7864664197, blue: 0.4217334986, alpha: 1))).onTapGesture {
                         self.isOn.toggle()
                     }
                 }
                 Spacer()
                 Button(action: {
-                    self.presentation = self.mecaninc.isValido
+                    let trasiation = Transiation(cardNumber: self.userDefault.getValue(.numberCard), cvv: Int(self.userDefault.getValue(.cvv)) ?? 0, value:  Double(self.mecaninc.value) ?? 0.0, expiryDate: self.userDefault.getValue(.expiry), destinationUserId: self.people?.id ?? 0)
+                        self.postPayment.makePost(trasiation:trasiation)
+                    if self.postPayment.status{
+                         self.presentation = self.mecaninc.isValido
+                    }
+                   
                 }) {
                     Text("Pagar")
                     
